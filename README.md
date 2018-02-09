@@ -79,7 +79,10 @@ The "no" class has the maximum probability, so for that particular instance, the
 ### Spam filter using Naive Bayes
 
 A very practical application of Naive Bayes classifier is used in spam filters. For this application, it's necessary a training data of words present in spam and not spam emails. Using Naive Bayes approach, we assume that the words occurence are independent from each other - even though they are not. A test set should be executed against the training set to classify the email as spam or not spam.
+
 ## KNN
+
+## Decision Tree
 
 ## SVM
 
