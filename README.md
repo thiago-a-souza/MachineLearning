@@ -81,10 +81,9 @@ The "no" class has the maximum probability, so for that particular instance, the
 A very practical application of Naive Bayes classifier is used in spam filters. For this application, it's necessary a training data of words present in spam and not spam emails. Using Naive Bayes approach, we assume that the words occurence are independent from each other - even though they are not. A test set should be executed against the training set to classify the email as spam or not spam.
 
 ## kNN
-The idea behind k-Nearest Neighbor (kNN) is very simple. Having a training set with n attributes (i.e. n-dimensional space), it classifies an example based on the most frequent class among k nearest neighbors, using a provided distance metric (e.g. Euclidean, Manhattan, etc). When k=1, the unknown example is assigned to the class of the closest neighbor. However, this approach can be influenced by noise and return incorrect results, for instance, the example below in black would be  classified as red if it was used k=1. As result of that, choosing a good k is a challenge and depends on the training set used. Another common problem is having ties among classes. To minimize or eliminate that risk, it can be used odd numbers as k  or sort the nearest neighbors assigning weights according to their distances. 
+The idea behind k-Nearest Neighbor (kNN) is very simple. Having a training set with n attributes (i.e. n-dimensional space), it classifies an example based on the most frequent class among k nearest neighbors, using a provided distance metric (e.g. Euclidean, Manhattan, etc). When k=1, the unknown example is assigned to the class of the closest neighbor. However, this approach can be influenced by noise and return incorrect results, for instance, the example below in black would be  classified as red if it was used k=1. As result of that, choosing a good k is a challenge and depends on the training set used. Another common problem occurs when the number of classes are tied. There are several alternatives to eliminate that side effect, for example, by choosing a random class among ties, or assigning weights to tied classes according to their distances, etc.
 
-
-<img src="https://github.com/thiago-a-souza/MachineLearning/blob/master/img/knn.png" height="35%" width="35%">
+<img src="https://github.com/thiago-a-souza/MachineLearning/blob/master/img/knn.png" height="80%" width="80%">
 
 
 ## Decision Tree
