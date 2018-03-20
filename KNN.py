@@ -35,7 +35,6 @@ SAMPLE INPUT:
 
 SAMPLE OUTPUT:
 two
-
 '''
 
 
