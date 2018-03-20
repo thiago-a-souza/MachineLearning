@@ -8,7 +8,7 @@ LANGUAGE:
 INPUT:
  The input file should have the following format. The first line consists of an integer representing the k nearest neighbors.
  On the second line, two coordinates x and y represent the test data. On the third line, an integer n represents
- number of items in the training set. Then follow n lines, each of them consisting of two numbers x and y, representing
+ number of items in the training set. Then follow n lines, each of them consisting of two numbers xt and yt, representing
  the training coordinates and the corresponding category.
 
 OUTPUT:
@@ -77,8 +77,8 @@ for i in range(0, n):
 
 knn = KNN()
 
-print("Test example: ", (x,y))
+print("Test example:", (x,y))
 print("k:", k)
-print("Category: ", knn.classify(k, training, (x,y)))
+print("Category:", knn.classify(k, training, (x,y)))
 
 
