@@ -85,7 +85,7 @@ The idea behind k-Nearest Neighbor (kNN) is very simple. Having a labeled datase
 
 Another common problem occurs when the number of neighbor classes are tied. There are several alternatives to eliminate that side effect, for example, by choosing a random class among ties, or assigning weights to tied classes according to their distances, etc.
 
-Using kNN against large training sets can be prohibitive. Ideal supervised machine learning algorithms should demand a high computational cost in training phase and a fast test phase, but kNN does the opposite. It does not have a training phase, and the test phase is time-consuming, since the entire training set is used to search for nearest neighbors. Several solutions were proposed to mitigate this difficulty: using kd-trees to store nearby nodes more efficiently, eliminating least relevant dimensional spaces, removing redundant data from the training set, etc. 
+Using kNN against large training sets can be prohibitive. Ideal supervised machine learning algorithms should demand a high computational cost in training phase and a fast test phase, but kNN does the opposite. It does not have a training phase, and the test phase is time-consuming, since the entire training set is used to search for nearest neighbors. Several solutions were proposed to mitigate this difficulty: using kd-trees to store nearby nodes more efficiently, eliminating least relevant dimensional spaces, removing redundant data from the training set, etc [(3)](#references). 
 
 <img src="https://github.com/thiago-a-souza/MachineLearning/blob/master/img/knn.png" height="80%" width="80%">
 
@@ -108,4 +108,7 @@ Using kNN against large training sets can be prohibitive. Ideal supervised machi
 (1) Mitchell, T. M. Machine Learning. McGraw Hill, 1997.
 
 (2) Russell, Stuart J. and Norvig, Peter. Artificial intelligence: a modern approach (3rd edition). Pearson,  2009.
+
+(3) Han, Jiawei; Pei, Jian; Kamber, Micheline. Data mining: concepts and techniques (3rd edition). Morgan Kaufmann, 2011.
+
 
