@@ -1,4 +1,7 @@
 '''
+AUTHOR:
+ Thiago Alexandre Domingues de Souza
+
 LANGUAGE:
  Python3
 
