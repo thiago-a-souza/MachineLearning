@@ -18,22 +18,22 @@ Bayes theorem states that the probability of event B occuring, given that event 
 ### Example
 Using the training set below, what's the probability to play a given game in a rainy day?
 
-|     | outlook | temperature | humidity | windy |    play      |
-|:---:|:-------:|:-----------:|:--------:|:-----:|:------------:|
-|  1  |  sunny  |     hot     |   high   | false |     no       |
-|  2  |  sunny  |     hot     |   high   | true  |     no       |
-|  3  | overcast|     hot     |   high   | false |     yes      |
-|  4  |  rainy  |     mild    |   high   | false |     yes      |
-|  5  |  rainy  |     cool    |   normal | false |     yes      |
-|  6  |  rainy  |     cool    |   normal | true  |     no       | 
-|  7  | overcast|     cool    |   normal | true  |     yes      |
-|  8  |  sunny  |     mild    |   high   | false |     no       |
-|  9  |  sunny  |     cool    |   normal | false |     yes      |
-|  10 |  rainy  |     mild    |   normal | false |     yes      |
-|  11 |  sunny  |     mild    |   normal | true  |     yes      |
-|  12 | overcast|     mild    |   high   | true  |     yes      |
-|  13 | overcast|     hot     |   normal | false |     yes      |
-|  14 |  rainy  |     mild    |   high   | true  |     no       |
+|     | outlook | temperature | humidity |  wind  |   play    |
+|:---:|:-------:|:-----------:|:--------:|:------:|:---------:|
+|  1  |  sunny  |     hot     |   high   | weak   |    no     |
+|  2  |  sunny  |     hot     |   high   | strong |    no     |
+|  3  | overcast|     hot     |   high   | weak   |    yes    |
+|  4  |  rainy  |     mild    |   high   | weak   |    yes    |
+|  5  |  rainy  |     cool    |   normal | weak   |    yes    |
+|  6  |  rainy  |     cool    |   normal | strong |    no     | 
+|  7  | overcast|     cool    |   normal | strong |    yes    |
+|  8  |  sunny  |     mild    |   high   | weak   |    no     |
+|  9  |  sunny  |     cool    |   normal | weak   |    yes    |
+|  10 |  rainy  |     mild    |   normal | weak   |    yes    |
+|  11 |  sunny  |     mild    |   normal | strong |    yes    |
+|  12 | overcast|     mild    |   high   | strong |    yes    |
+|  13 | overcast|     hot     |   normal | weak   |    yes    |
+|  14 |  rainy  |     mild    |   high   | strong |    no     |
 
 We have two alternatives to answer that question:
 
@@ -62,7 +62,7 @@ Rewriting to apply the probability products, we have a Naive Bayes classifier:
 ![](/img/nb7.png)
 
 ### Example
-Classify the test instance {outlook: sunny, temperature: cool, humidity: high, windy: true}, with yes/no classes.
+Classify the test instance {outlook: sunny, temperature: cool, humidity: high, windy: strong}, with yes/no classes.
 
 Applying Naive Bayes classifier: 
 
