@@ -92,7 +92,7 @@ Using kNN against large training sets can be prohibitive. Ideal supervised machi
 </p>
 
 ## Decision Tree
-Using an intuitive structure that emulate human decisions, decision trees are used to solve both classification and regression problems. Starting from the root node, every non-leaf node have descendents that represent  alternatives available, and leaf nodes denote the result for the decisions taken. For example, considering the table used in the Naive Bayes section, the following decision tree can be created to classify if the weather conditions are suitable or not for playing tennis.
+Using an intuitive structure that emulate human decisions, decision trees are used to solve both classification and regression problems. Starting from the root node, every non-leaf node have descendants that represent  alternatives available, and leaf nodes denote the result for the decisions taken. For example, considering the table used in the Naive Bayes section, the following decision tree can be created to classify if the weather conditions are suitable or not for playing tennis.
 
 <p align="center">
 <img src="https://github.com/thiago-a-souza/MachineLearning/blob/master/img/decision_tree.png">
