@@ -87,13 +87,17 @@ Another common problem occurs when the number of neighbor classes are tied. Ther
 
 Using kNN against large training sets can be prohibitive. Ideal supervised machine learning algorithms should demand a high computational cost in training phase and a fast test phase, but kNN does the opposite. It does not have a training phase, and the test phase is time-consuming, since the entire training set is used to search for nearest neighbors. Several solutions were proposed to mitigate this difficulty: using kd-trees to store nearby nodes more efficiently, eliminating least relevant dimensional spaces, removing redundant data from the training set, etc [(3)](#references). 
 
+<p align="center">
 <img src="https://github.com/thiago-a-souza/MachineLearning/blob/master/img/knn.png" height="80%" width="80%">
-
+</p>
 
 ## Decision Tree
 Decision Trees are used to solve both classification and regression problems, and their intuitive structure emulate human decisions. Starting from the root node, every non-leaf node have descendents that represent  alternatives available, and leaf nodes denote the result for the decisions taken. For example, considering the table used in the Naive Bayes section, the following decision tree can be created to classify if the weather conditions are suitable or not for playing tennis.
 
-![](/img/decision_tree.png)
+<p align="center">
+<img src="https://github.com/thiago-a-souza/MachineLearning/blob/master/img/decision_tree.png">
+</p>
+
 
 
 ID3 (Iterative Dichotomiser), C4.5 (a sucessor of ID3) and CART (Classification and Regression Trees) are  the most popular decision tree algorithms. All three algorithms build decision trees using a greedy strategy in top-down recursive divide-and-conquer approach. 
