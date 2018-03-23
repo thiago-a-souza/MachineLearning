@@ -108,7 +108,7 @@ In probability theory, entropy measures the uncertainty of a random variable, so
 <img src="https://github.com/thiago-a-souza/MachineLearning/blob/master/img/entropy.png">
 </p>
 
-**Example:** 
+**Example:** consider a collection with 14 examples, 9 belonging to a positive class and 5 associated with a negative class, the entropy can be calculated as follows.
 
 ![](/img/entropy2.png)
 
