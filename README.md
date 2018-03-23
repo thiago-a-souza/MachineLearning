@@ -92,13 +92,17 @@ Using kNN against large training sets can be prohibitive. Ideal supervised machi
 </p>
 
 ## Decision Tree
-Decision Trees are used to solve both classification and regression problems, and their intuitive structure emulate human decisions. Starting from the root node, every non-leaf node have descendents that represent  alternatives available, and leaf nodes denote the result for the decisions taken. For example, considering the table used in the Naive Bayes section, the following decision tree can be created to classify if the weather conditions are suitable or not for playing tennis.
+Using an intuitive structure that emulate human decisions, decision trees are used to solve both classification and regression problems. Starting from the root node, every non-leaf node have descendents that represent  alternatives available, and leaf nodes denote the result for the decisions taken. For example, considering the table used in the Naive Bayes section, the following decision tree can be created to classify if the weather conditions are suitable or not for playing tennis.
 
 <p align="center">
 <img src="https://github.com/thiago-a-souza/MachineLearning/blob/master/img/decision_tree.png">
 </p>
 
-ID3 (Iterative Dichotomiser), C4.5 (a sucessor of ID3) and CART (Classification and Regression Trees) are  the most popular decision tree algorithms. All three algorithms build decision trees using a greedy strategy in top-down recursive divide-and-conquer approach. The fundamental question when creating a decision tree is: what attribute should be selected for a given node that produces a significant decision tree and minimizes the final tree depth? Answering that question requires a statistical analysis on the training set. Solutions frequently used: information gain (ID3), gain ratio (C4.5) and Gini index (CART).
+ID3 (Iterative Dichotomiser), C4.5 (a sucessor of ID3) and CART (Classification and Regression Trees) are  the most popular decision tree algorithms. All three algorithms use a greedy strategy in top-down recursive divide-and-conquer approach. The fundamental question when creating a decision tree is: what attribute should be selected for a given node that produces a significant decision tree and minimizes the final tree depth? Answering that question requires a statistical analysis on the training set. Solutions frequently used: information gain (ID3), gain ratio (C4.5) and Gini index (CART).
+
+### Entropy
+In probability theory, entropy measures the uncertainty of a random variable, so lower entropies represent a well organized/predictable data distribution. 
+
 
 
 ## SVM
