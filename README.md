@@ -35,7 +35,7 @@ Using the training set below, what's the probability to play a given game in a r
 |  13 | overcast|     hot     |   normal | weak   |    yes    |
 |  14 |  rainy  |     mild    |   high   | strong |    no     |
 
-We have two alternatives to answer that question:
+There are two alternatives to answer that question:
 
 ![](/img/nb2.png)
 
@@ -98,9 +98,7 @@ Decision Trees are used to solve both classification and regression problems, an
 <img src="https://github.com/thiago-a-souza/MachineLearning/blob/master/img/decision_tree.png">
 </p>
 
-
-
-ID3 (Iterative Dichotomiser), C4.5 (a sucessor of ID3) and CART (Classification and Regression Trees) are  the most popular decision tree algorithms. All three algorithms build decision trees using a greedy strategy in top-down recursive divide-and-conquer approach. 
+ID3 (Iterative Dichotomiser), C4.5 (a sucessor of ID3) and CART (Classification and Regression Trees) are  the most popular decision tree algorithms. All three algorithms build decision trees using a greedy strategy in top-down recursive divide-and-conquer approach. The fundamental question when creating a decision tree is: what attribute should be selected for a given node that produces a significant decision tree and minimizes the final tree depth? Answering that question requires a statistical analysis on the training set. Solutions frequently used: information gain (ID3), gain ratio (C4.5) and Gini index (CART).
 
 
 ## SVM
