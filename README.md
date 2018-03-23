@@ -110,6 +110,9 @@ In probability theory, entropy measures the uncertainty of a random variable, so
 
 **Example:** 
 
+![](/img/entropy2.png)
+
+
 ## SVM
 
 # Unsupervised Learning
