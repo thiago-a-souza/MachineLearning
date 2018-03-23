@@ -91,6 +91,7 @@ Using kNN against large training sets can be prohibitive. Ideal supervised machi
 
 
 ## Decision Tree
+Decision Trees are used to solve both classification and regression problems, and their intuitive structure emulate human decisions. Starting from the root node, every non-leaf node have descendents that represent  alternatives available, and leaf nodes denote the result for the decisions taken.
 
 ## SVM
 
