@@ -141,7 +141,7 @@ Evaluating the information gain for all attributes return the values below. As r
 ![](/img/step5.png)
 
 #### Identifying child node
-The process is similar to identify the root node, the difference is that is considers only a subset of the collection, restring the collection to the path taken. 
+The process is similar to identify the root node, the difference is that it considers only a subset of the collection, restricting the collection to the path taken. 
 
 
 ### Gain Ratio
