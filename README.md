@@ -119,10 +119,8 @@ In order to choose higher entropies for a given node, ID3 uses a measures called
 <img src="https://github.com/thiago-a-souza/MachineLearning/blob/master/img/information_gain.png">
 </p>
 
-**Example:**  considering the play tennis table, identify the root node of a decision tree using ID3 algorithm.
-
-
-Creating the root node requires selecting the highest information gain among all attributes (i.e. outlook, temperature, humidity and wind). Consider the steps below to calculate the information gain for the wind attribute:
+#### Identifying root node       
+Identifying the root node requires selecting the highest information gain among all attributes (i.e. outlook, temperature, humidity and wind). Consider the steps below to calculate the information gain for the wind attribute:
 
 ![](/img/step1.png)
 
@@ -142,7 +140,9 @@ Evaluating the information gain for all attributes return the values below. As r
 
 ![](/img/step5.png)
 
-**Example:** identify the child attribute that should be selected when the outlook is sunny.
+#### Identifying child node
+The process is similar to identify the root node, the difference is that is considers only a subset of the collection, restring the collection to the path taken. 
+
 
 ### Gain Ratio
 
