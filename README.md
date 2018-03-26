@@ -113,7 +113,7 @@ In probability theory, entropy measures the uncertainty of a random variable, so
 ![](/img/entropy2.png)
 
 ### Information Gain
-In order to choose higher entropies for a given node, ID3 uses a measures called Information Gain, which simply calculates the entropy after removing the entropy related to a given attribute, that way the attribute with the  highest information gain is chosen. Information gain can be defined using the equation below, where S represents the entire collection, Sv is a subset of S that refers to the attribute v and Values(A) specifies the possible values for the attribute A.
+In order to choose higher entropies for a given node, ID3 uses a measure called Information Gain, which simply calculates the entropy after removing the entropy related to a given attribute, that way the attribute with the  highest information gain is chosen. Information gain can be defined using the equation below, where S represents the entire collection, Sv is a subset of S that refers to the attribute v and Values(A) specifies the possible values for the attribute A.
 
 <p align="center">
 <img src="https://github.com/thiago-a-souza/MachineLearning/blob/master/img/information_gain.png">
