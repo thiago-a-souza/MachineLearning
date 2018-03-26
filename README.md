@@ -119,7 +119,7 @@ In order to choose higher entropies for a given node, ID3 uses a measures called
 <img src="https://github.com/thiago-a-souza/MachineLearning/blob/master/img/information_gain.png">
 </p>
 
-#### Identifying root node       
+#### Selecting a root node       
 Identifying the root node requires selecting the highest information gain among all attributes (i.e. outlook, temperature, humidity and wind). Consider the steps below to calculate the information gain for the wind attribute:
 
 ![](/img/step1.png)
@@ -140,14 +140,33 @@ Evaluating the information gain for all attributes return the values below. As r
 
 ![](/img/step5.png)
 
-#### Identifying child node
-The process is similar to identify the root node, the difference is that it considers only a subset of the collection, restricting the collection to the path taken and attributes not chosen. After selecting the outlook as the root node, now the child attributes should be identified. Considering the figure below, the following example demonstrate how to select the child node for the sunny path.
+#### Selecting a child node
+The process is similar to identify the root node, the difference is that it considers only a subset of the collection, restricting the collection to the path taken and attributes not chosen. Considering the figure below, the following example demonstrate how to select the child node for the sunny path.
 
 
 <p align="center">
 <img src="https://github.com/thiago-a-souza/MachineLearning/blob/master/img/decision_tree2.png">
 </p>
 
+Calculating the information gain for the child attribute involves only rows with a sunny outlook:
+
+![](/img/child1.png)
+
+Determining entropies:
+
+![](/img/child2.png)
+
+Computing the ratio of the attribute compared to the subset:
+
+![](/img/child3.png)
+
+Replacing values identified previously:
+
+![](/img/child4.png)
+
+Using the same idea for the other attributes (i.e. Humidity and Temperature). Consequently, the humidity attribute has the highest information gain and should be selected as the child node.
+
+![](/img/child5.png)
 
 ## SVM
 
