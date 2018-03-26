@@ -108,12 +108,12 @@ In probability theory, entropy measures the uncertainty of a random variable, so
 <img src="https://github.com/thiago-a-souza/MachineLearning/blob/master/img/entropy.png">
 </p>
 
-**Example:** consider a collection with 14 examples, 9 belonging to a positive class and 5 associated with a negative class, the entropy can be calculated as follows.
+**Example:** consider the playing tennis table described in the Naive Bayes section. It has 14 examples, 9 of them are suitable for playing tennis and the remaining 5 examples are not, so the entropy for this collection can be calculated as follows:
 
 ![](/img/entropy2.png)
 
 ### Information Gain
-
+In order to choose higher entropies for a given node, ID3 uses a measures called Information Gain, which simply calculates the entropy after removing the entropy related to a given attribute, That way the attribute with the  highest information gain is chosen. 
 ### Gain Ratio
 
 ### Gini Index
