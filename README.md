@@ -130,19 +130,19 @@ The Entropy should be calculated for the entire collection S and the subsets wea
 
 ![](/img/step2.png)
 
-Calculating the fraction of examples whose attribute has a given value (e.g. 8 examples are weak out of 14):
+Computing the fraction of examples whose attribute has a given value (e.g. 8 examples are weak out of 14):
 
 ![](/img/step3.png)
 
-Calculating the information gain after replacing the values previously determined:
+Determining the information gain after replacing values calculated before:
 
 ![](/img/step4.png)
 
-Calculating the information gain for all attributes indicates that the outlook  should be selected as the root node, since it has the highest information gain.
+Evaluating the information gain for all attributes return the values below. As result of that, the outlook should be selected as the root node, since it has the highest information gain.
 
 ![](/img/step5.png)
 
-
+**Example:** identify the child attribute that should be selected when the outlook is sunny.
 
 ### Gain Ratio
 
