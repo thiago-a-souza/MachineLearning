@@ -98,7 +98,7 @@ Using an intuitive structure that emulate human decisions, decision trees are us
 <img src="https://github.com/thiago-a-souza/MachineLearning/blob/master/img/decision_tree.png">
 </p>
 
-ID3 (Iterative Dichotomiser), C4.5 (a sucessor of ID3) and CART (Classification and Regression Trees) are  the most popular decision tree algorithms. All three algorithms use a greedy strategy in top-down recursive divide-and-conquer approach. The fundamental question when creating a decision tree is: what attribute should be selected for a given node that produces a significant decision tree and minimizes the final tree depth? Answering that question requires a statistical analysis on the training set. Solutions frequently used: information gain (ID3), gain ratio (C4.5) and Gini index (CART).
+ID3 (Iterative Dichotomiser), C4.5 (ID3's sucessor) and CART (Classification and Regression Trees) are  the most popular decision tree algorithms. All three algorithms use a greedy strategy in top-down recursive divide-and-conquer approach. The fundamental question when creating a decision tree is: what attribute should be selected for a given node that produces a significant decision tree and minimizes the final tree depth? Answering that question requires a statistical analysis on the training set. Solutions frequently used: information gain (ID3), gain ratio (C4.5) and Gini index (CART).
 
 ### Entropy
 In probability theory, entropy measures the uncertainty of a random variable, so lower entropies represent a well organized/predictable data distribution. Entropy varies from zero to one, zero representing no uncertainty and one denoting that the occurrences are the same, for example, the probability of flipping a coin and getting heads or tails is the same, so the entropy is 1. Taking that into account, in the context of decision trees, attributes with higher entropies should be chosen before lower entropies, that way leaf nodes have a final output. Entropy can be defined using the equation below, where *S* is a collection of examples with *c* different classes and *pi* as the proportion of classes labeled as *ci*.
@@ -141,12 +141,13 @@ Evaluating the information gain for all attributes return the values below. As r
 ![](/img/step5.png)
 
 #### Identifying child node
-The process is similar to identify the root node, the difference is that it considers only a subset of the collection, restricting the collection to the path taken. 
+The process is similar to identify the root node, the difference is that it considers only a subset of the collection, restricting the collection to the path taken and attributes not chosen. After selecting the outlook as the root node, now the child attributes should be identified. Considering the figure below, the following example demonstrate how to select the child node for the sunny path.
 
 
-### Gain Ratio
+<p align="center">
+<img src="https://github.com/thiago-a-souza/MachineLearning/blob/master/img/decision_tree2.png">
+</p>
 
-### Gini Index
 
 ## SVM
 
