@@ -148,7 +148,7 @@ The process is similar to identify the root node, the difference is that it cons
 <img src="https://github.com/thiago-a-souza/MachineLearning/blob/master/img/decision_tree2.png">
 </p>
 
-Calculating the information gain for the child attribute involves only rows with a sunny outlook:
+Calculating the information gain for the wind attribute:
 
 ![](/img/child1.png)
 
@@ -164,7 +164,7 @@ Replacing values identified previously:
 
 ![](/img/child4.png)
 
-Using the same idea for the other attributes (i.e. Humidity and Temperature). Consequently, the humidity attribute has the highest information gain and should be selected as the child node.
+After calculating the information gain for the other attributes (i.e. Humidity and Temperature), the humidity should be selected as the child node, because it has the highest information gain.
 
 ![](/img/child5.png)
 
