@@ -102,6 +102,8 @@ ID3 (Iterative Dichotomiser), C4.5 (ID3's sucessor) and CART (Classification and
 
 A common problem in decision trees is called **overfitting**. That happens when the model works well on the training data but doesn't generalize appropriately. Several factors can cause overfitting, for example, noises in the training data can result in complex trees that don't represent the entire distribution, or when the number of examples in the training set is small and doesn't produce a significant structure. In order to solve this issue, post-pruning has been successfully applied, eliminating nodes that are not relevant - if the node is irrelevant it is replaced with a leaf node.
 
+The following topics, entropy and information gain, are introduced to understand how ID3 algorithm works.
+
 ### Entropy
 In probability theory, entropy measures the uncertainty of a random variable, so lower entropies represent a well organized/predictable data distribution. Entropy varies from zero to one, zero representing no uncertainty and one denoting that the occurrences are the same, for example, the probability of flipping a coin and getting heads or tails is the same, so the entropy is 1. Taking that into account, in the context of decision trees, attributes with higher entropies should be chosen before lower entropies, that way leaf nodes have a final output. Entropy can be defined using the equation below, where *S* is a collection of examples with *c* different classes and *pi* as the proportion of classes labeled as *ci*.
 
@@ -122,7 +124,7 @@ In order to choose higher entropies for a given node, ID3 uses a measure called 
 </p>
 
 #### Selecting a root node       
-Identifying the root node requires selecting the highest information gain among all attributes (i.e. outlook, temperature, humidity and wind). Consider the steps below to calculate the information gain for the wind attribute:
+In order to identify the root node, ID3 selects the highest information gain among all attributes (i.e. outlook, temperature, humidity and wind). Consider the steps below to calculate the information gain for the wind attribute:
 
 ![](/img/step1.png)
 
