@@ -145,7 +145,7 @@ Evaluating the information gain for all attributes return the values below. As r
 ![](/img/step5.png)
 
 #### Selecting a child node
-The process is similar to identify the root node, the difference is that it considers only a subset of the collection, restricting the collection to the path taken and attributes not chosen. Considering the figure below, the following example demonstrate how to select the child node for the sunny path.
+The process is similar to identify the root node, the difference is that it considers only a subset of the collection, restricting the collection to the path taken and attributes not chosen. Considering the figure below, the following example demonstrate how to select a child node for the sunny path.
 
 
 <p align="center">
