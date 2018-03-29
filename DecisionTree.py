@@ -30,7 +30,7 @@ training = train_features[:-1]
 # Last row is test set
 testing = train_features[-1:]
 
-# LabelEncoder is used to convert class labels to numeric values
+# LabelEncoder is used to convert class labels into numeric values
 le = LabelEncoder()
 labels = le.fit_transform(data['play'][:-1])
 
